@@ -1,0 +1,87 @@
+<?xml version='1.0'?>
+<mavlink>
+    <include>common.xml</include>
+    
+    <enums>
+        <enum name="MAV_CMD">
+            <description></description>
+            <entry value="195" name="MAV_CMD_SET_GROUP_MODE_ID">
+                <description>set mode for group control</description>
+                <param index="1">modeID</param>
+                <param index="2">Empty</param>
+                <param index="3">Empty</param>
+                <param index="4">Empty</param>
+                <param index="5">Empty</param>
+                <param index="6">Empty</param>
+                <param index="7">Empty</param>
+            </entry>
+            <entry value="196" name="MAV_CMD_RESET_GROUP_PARAMS">
+                <description>reset group mode params to default</description>
+                <param index="1">modeID</param>
+                <param index="2">Empty</param>
+                <param index="3">Empty</param>
+                <param index="4">Empty</param>
+                <param index="5">Empty</param>
+                <param index="6">Empty</param>
+                <param index="7">Empty</param>
+            </entry>
+        </enum>
+        
+        <enum name="GROUPCONTROL_MODE">
+            <entry value="0" name="NO_MODE"></entry>
+            <entry value="1" name="REYNOLDS_MODE"></entry>
+            <entry value="2" name="FORMATION_MODE"></entry>
+        </enum>
+        
+    </enums>
+
+    <messages>
+      <message id="202" name="ModeId">
+          <description>current mode of groupcontrol script</description>
+          <field type="uint32_t" name="modeId">ModeiD</field>
+        </message>
+
+        <message id="203" name="ReynoldsParams">
+          <description>reynolds params</description>
+          <field type="float" name="kc">gravity coeff</field>
+          <field type="float" name="ks">repulsive coeff</field>
+          <field type="float" name="ka">speed alignment coeff</field>
+          <field type="float" name="kp">chasing coeff</field>
+          <field type="float" name="km">waypoint gravity coeff</field>
+          <field type="float" name="kh">rotate speed coeff</field>
+          <field type="float" name="vmax">max autopilot velocity</field>
+          <field type="float" name="rn">search radius of groupmate </field>
+          <field type="float" name="rs">repulsiveOn radius</field>
+          <field type="float" name="rm">getting waypoint radius</field>
+          <field type="float" name="rmb">change gravity law radius</field>
+        </message>
+
+        <message id="204" name="SetReynoldsParams">
+          <description>set reynolds params</description>
+          <field type="float" name="kc">gravity coeff</field>
+          <field type="float" name="ks">repulsive coeff</field>
+          <field type="float" name="ka">speed alignment coeff</field>
+          <field type="float" name="kp">chasing coeff</field>
+          <field type="float" name="km">waypoint gravity coeff</field>
+          <field type="float" name="kh">rotate speed coeff</field>
+          <field type="float" name="vmax">max autopilot velocity</field>
+          <field type="float" name="rn">search radius of groupmate </field>
+          <field type="float" name="rs">repulsiveOn radius</field>
+          <field type="float" name="rm">getting waypoint radius</field>
+          <field type="float" name="rmb">change gravity law radius</field>
+        </message>
+
+        <message id="205" name="FormationParams">
+          <description>formation params</description>
+          <field type="float" name="param1">some param</field>
+          <field type="float" name="param2">some param</field>
+        </message>
+
+        <message id="206" name="SetFormationParams">
+          <description>ser formation params to groupcontrol script</description>
+          <field type="float" name="param1">some param</field>
+          <field type="float" name="param2">some param</field>
+        </message>
+
+    </messages>
+</mavlink>
