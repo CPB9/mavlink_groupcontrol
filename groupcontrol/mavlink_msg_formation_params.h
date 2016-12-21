@@ -1,7 +1,7 @@
 #pragma once
 // MESSAGE FORMATION_PARAMS PACKING
 
-#define MAVLINK_MSG_ID_FORMATION_PARAMS 212
+#define MAVLINK_MSG_ID_FORMATION_PARAMS 209
 
 MAVPACKED(
 typedef struct __mavlink_formation_params_t {
@@ -11,17 +11,17 @@ typedef struct __mavlink_formation_params_t {
 
 #define MAVLINK_MSG_ID_FORMATION_PARAMS_LEN 8
 #define MAVLINK_MSG_ID_FORMATION_PARAMS_MIN_LEN 8
-#define MAVLINK_MSG_ID_212_LEN 8
-#define MAVLINK_MSG_ID_212_MIN_LEN 8
+#define MAVLINK_MSG_ID_209_LEN 8
+#define MAVLINK_MSG_ID_209_MIN_LEN 8
 
 #define MAVLINK_MSG_ID_FORMATION_PARAMS_CRC 17
-#define MAVLINK_MSG_ID_212_CRC 17
+#define MAVLINK_MSG_ID_209_CRC 17
 
 
 
 #if MAVLINK_COMMAND_24BIT
 #define MAVLINK_MESSAGE_INFO_FORMATION_PARAMS { \
-    212, \
+    209, \
     "FORMATION_PARAMS", \
     2, \
     {  { "param1", NULL, MAVLINK_TYPE_FLOAT, 0, 0, offsetof(mavlink_formation_params_t, param1) }, \

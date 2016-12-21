@@ -1,7 +1,7 @@
 #pragma once
 // MESSAGE MAN_SET_WAYPOINT_FLYING_MODE PACKING
 
-#define MAVLINK_MSG_ID_MAN_SET_WAYPOINT_FLYING_MODE 204
+#define MAVLINK_MSG_ID_MAN_SET_WAYPOINT_FLYING_MODE 205
 
 MAVPACKED(
 typedef struct __mavlink_man_set_waypoint_flying_mode_t {
@@ -11,17 +11,17 @@ typedef struct __mavlink_man_set_waypoint_flying_mode_t {
 
 #define MAVLINK_MSG_ID_MAN_SET_WAYPOINT_FLYING_MODE_LEN 3
 #define MAVLINK_MSG_ID_MAN_SET_WAYPOINT_FLYING_MODE_MIN_LEN 3
-#define MAVLINK_MSG_ID_204_LEN 3
-#define MAVLINK_MSG_ID_204_MIN_LEN 3
+#define MAVLINK_MSG_ID_205_LEN 3
+#define MAVLINK_MSG_ID_205_MIN_LEN 3
 
 #define MAVLINK_MSG_ID_MAN_SET_WAYPOINT_FLYING_MODE_CRC 163
-#define MAVLINK_MSG_ID_204_CRC 163
+#define MAVLINK_MSG_ID_205_CRC 163
 
 
 
 #if MAVLINK_COMMAND_24BIT
 #define MAVLINK_MESSAGE_INFO_MAN_SET_WAYPOINT_FLYING_MODE { \
-    204, \
+    205, \
     "MAN_SET_WAYPOINT_FLYING_MODE", \
     2, \
     {  { "waypointId", NULL, MAVLINK_TYPE_UINT16_T, 0, 0, offsetof(mavlink_man_set_waypoint_flying_mode_t, waypointId) }, \

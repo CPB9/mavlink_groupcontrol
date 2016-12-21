@@ -1,7 +1,7 @@
 #pragma once
 // MESSAGE MAN_SET_SCRIPT_MODE PACKING
 
-#define MAVLINK_MSG_ID_MAN_SET_SCRIPT_MODE 202
+#define MAVLINK_MSG_ID_MAN_SET_SCRIPT_MODE 204
 
 MAVPACKED(
 typedef struct __mavlink_man_set_script_mode_t {
@@ -10,17 +10,17 @@ typedef struct __mavlink_man_set_script_mode_t {
 
 #define MAVLINK_MSG_ID_MAN_SET_SCRIPT_MODE_LEN 1
 #define MAVLINK_MSG_ID_MAN_SET_SCRIPT_MODE_MIN_LEN 1
-#define MAVLINK_MSG_ID_202_LEN 1
-#define MAVLINK_MSG_ID_202_MIN_LEN 1
+#define MAVLINK_MSG_ID_204_LEN 1
+#define MAVLINK_MSG_ID_204_MIN_LEN 1
 
 #define MAVLINK_MSG_ID_MAN_SET_SCRIPT_MODE_CRC 104
-#define MAVLINK_MSG_ID_202_CRC 104
+#define MAVLINK_MSG_ID_204_CRC 104
 
 
 
 #if MAVLINK_COMMAND_24BIT
 #define MAVLINK_MESSAGE_INFO_MAN_SET_SCRIPT_MODE { \
-    202, \
+    204, \
     "MAN_SET_SCRIPT_MODE", \
     1, \
     {  { "scriptMode", NULL, MAVLINK_TYPE_UINT8_T, 0, 0, offsetof(mavlink_man_set_script_mode_t, scriptMode) }, \

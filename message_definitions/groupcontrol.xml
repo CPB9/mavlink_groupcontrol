@@ -20,7 +20,7 @@
   <messages>
     <!-- MESSAGE IDs 180 - 229: Space for custom messages in individual projectname_messages.xml files -->
     
-    <message id="200" name="MAN_STATUS">
+    <message id="202" name="MAN_STATUS">
       <description>GroupControl Manager Status</description>
       <field type="uint8_t"  name="scriptMode">Current Script Mode</field>
       <field type="uint8_t"  name="flyingMode">Current Flying Mode</field>
@@ -29,27 +29,27 @@
       <field type="uint16_t" name="nextWaypointId">Next waypoint id</field>
     </message>
 
-    <message id="201" name="MAN_SET_FLYING_MODE">
+    <message id="203" name="MAN_SET_FLYING_MODE">
       <description>Set Flying Mode, Switch MAN_SCRIPT_MODE to MAN_SCRIPT_MODE_MANUAL</description>
       <field type="uint8_t" enum="MAN_FLYING_MODE" name="flyingMode"></field>
     </message>
 
-    <message id="202" name="MAN_SET_SCRIPT_MODE">
+    <message id="204" name="MAN_SET_SCRIPT_MODE">
       <field type="uint8_t" enum="MAN_SCRIPT_MODE" name="scriptMode"></field>
     </message>
     
-    <message id="204" name="MAN_SET_WAYPOINT_FLYING_MODE">
+    <message id="205" name="MAN_SET_WAYPOINT_FLYING_MODE">
       <field type="uint16_t" name="waypointId"></field>
       <field type="uint8_t" name="flyingMode"></field>
     </message>
     
-    <message id="209" name="MAN_RESET_FLYING_MODE_PARAMS">
+    <message id="206" name="MAN_RESET_FLYING_MODE_PARAMS">
       <description>Reset flying mode params to defaults</description>
       <field type="uint8_t" enum="MAN_FLYING_MODE" name="flyingMode"></field>
     </message>
 
 
-    <message id="210" name="REYNOLDS_PARAMS">
+    <message id="207" name="REYNOLDS_PARAMS">
       <description>reynolds params</description>
       <field type="float" name="kc">gravity coeff</field>
       <field type="float" name="ks">repulsive coeff</field>
@@ -64,7 +64,7 @@
       <field type="float" name="rmb">change gravity law radius</field>
     </message>
 
-    <message id="211" name="SET_REYNOLDS_PARAMS">
+    <message id="208" name="SET_REYNOLDS_PARAMS">
       <description>set reynolds params</description>
       <field type="float" name="kc">gravity coeff</field>
       <field type="float" name="ks">repulsive coeff</field>
@@ -79,13 +79,13 @@
       <field type="float" name="rmb">change gravity law radius</field>
     </message>
 
-    <message id="212" name="FORMATION_PARAMS">
+    <message id="209" name="FORMATION_PARAMS">
       <description>formation params</description>
       <field type="float" name="param1">some param</field>
       <field type="float" name="param2">some param</field>
     </message>
 
-    <message id="213" name="SET_FORMATION_PARAMS">
+    <message id="210" name="SET_FORMATION_PARAMS">
       <description>ser formation params to groupcontrol script</description>
       <field type="float" name="param1">some param</field>
       <field type="float" name="param2">some param</field>

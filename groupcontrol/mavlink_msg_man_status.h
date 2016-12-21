@@ -1,7 +1,7 @@
 #pragma once
 // MESSAGE MAN_STATUS PACKING
 
-#define MAVLINK_MSG_ID_MAN_STATUS 200
+#define MAVLINK_MSG_ID_MAN_STATUS 202
 
 MAVPACKED(
 typedef struct __mavlink_man_status_t {
@@ -14,17 +14,17 @@ typedef struct __mavlink_man_status_t {
 
 #define MAVLINK_MSG_ID_MAN_STATUS_LEN 6
 #define MAVLINK_MSG_ID_MAN_STATUS_MIN_LEN 6
-#define MAVLINK_MSG_ID_200_LEN 6
-#define MAVLINK_MSG_ID_200_MIN_LEN 6
+#define MAVLINK_MSG_ID_202_LEN 6
+#define MAVLINK_MSG_ID_202_MIN_LEN 6
 
 #define MAVLINK_MSG_ID_MAN_STATUS_CRC 221
-#define MAVLINK_MSG_ID_200_CRC 221
+#define MAVLINK_MSG_ID_202_CRC 221
 
 
 
 #if MAVLINK_COMMAND_24BIT
 #define MAVLINK_MESSAGE_INFO_MAN_STATUS { \
-    200, \
+    202, \
     "MAN_STATUS", \
     5, \
     {  { "nextWaypointId", NULL, MAVLINK_TYPE_UINT16_T, 0, 0, offsetof(mavlink_man_status_t, nextWaypointId) }, \

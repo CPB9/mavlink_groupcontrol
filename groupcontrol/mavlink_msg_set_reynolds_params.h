@@ -1,7 +1,7 @@
 #pragma once
 // MESSAGE SET_REYNOLDS_PARAMS PACKING
 
-#define MAVLINK_MSG_ID_SET_REYNOLDS_PARAMS 211
+#define MAVLINK_MSG_ID_SET_REYNOLDS_PARAMS 208
 
 MAVPACKED(
 typedef struct __mavlink_set_reynolds_params_t {
@@ -20,17 +20,17 @@ typedef struct __mavlink_set_reynolds_params_t {
 
 #define MAVLINK_MSG_ID_SET_REYNOLDS_PARAMS_LEN 44
 #define MAVLINK_MSG_ID_SET_REYNOLDS_PARAMS_MIN_LEN 44
-#define MAVLINK_MSG_ID_211_LEN 44
-#define MAVLINK_MSG_ID_211_MIN_LEN 44
+#define MAVLINK_MSG_ID_208_LEN 44
+#define MAVLINK_MSG_ID_208_MIN_LEN 44
 
 #define MAVLINK_MSG_ID_SET_REYNOLDS_PARAMS_CRC 198
-#define MAVLINK_MSG_ID_211_CRC 198
+#define MAVLINK_MSG_ID_208_CRC 198
 
 
 
 #if MAVLINK_COMMAND_24BIT
 #define MAVLINK_MESSAGE_INFO_SET_REYNOLDS_PARAMS { \
-    211, \
+    208, \
     "SET_REYNOLDS_PARAMS", \
     11, \
     {  { "kc", NULL, MAVLINK_TYPE_FLOAT, 0, 0, offsetof(mavlink_set_reynolds_params_t, kc) }, \

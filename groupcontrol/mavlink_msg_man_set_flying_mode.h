@@ -1,7 +1,7 @@
 #pragma once
 // MESSAGE MAN_SET_FLYING_MODE PACKING
 
-#define MAVLINK_MSG_ID_MAN_SET_FLYING_MODE 201
+#define MAVLINK_MSG_ID_MAN_SET_FLYING_MODE 203
 
 MAVPACKED(
 typedef struct __mavlink_man_set_flying_mode_t {
@@ -10,17 +10,17 @@ typedef struct __mavlink_man_set_flying_mode_t {
 
 #define MAVLINK_MSG_ID_MAN_SET_FLYING_MODE_LEN 1
 #define MAVLINK_MSG_ID_MAN_SET_FLYING_MODE_MIN_LEN 1
-#define MAVLINK_MSG_ID_201_LEN 1
-#define MAVLINK_MSG_ID_201_MIN_LEN 1
+#define MAVLINK_MSG_ID_203_LEN 1
+#define MAVLINK_MSG_ID_203_MIN_LEN 1
 
 #define MAVLINK_MSG_ID_MAN_SET_FLYING_MODE_CRC 55
-#define MAVLINK_MSG_ID_201_CRC 55
+#define MAVLINK_MSG_ID_203_CRC 55
 
 
 
 #if MAVLINK_COMMAND_24BIT
 #define MAVLINK_MESSAGE_INFO_MAN_SET_FLYING_MODE { \
-    201, \
+    203, \
     "MAN_SET_FLYING_MODE", \
     1, \
     {  { "flyingMode", NULL, MAVLINK_TYPE_UINT8_T, 0, 0, offsetof(mavlink_man_set_flying_mode_t, flyingMode) }, \
